@@ -1,19 +1,23 @@
 import java.util.*;
+
 public class sample{
-    public static int getLargest(int numbers[]){
-        int largest = INTEGER.MIN_VALUE;
-        for(int i=0;i<numbers.length;i++){
-            if(largest<numbers[i]){
-                largest = numbers[i];
+   public static void subArrays(int arr[]){
+    for(int i = 0;i<arr.length;i++){
+        int start = i;
+        for(int j=i;j<arr.length;j++){
+            int end = j;
+            for(int k=arr[j];k<=arr.length;k++){        // print
+                System.out.println(arr[k]+" ");
             }
+            System.out.pritln();
         }
-        return largest;
-
+        System.out.println();
     }
-    public static void main(String args[]);
-    Scanner scn = new Scanner(System.in);
-    int numbers[]={1,2,3,4,5,6};
-    System.out.println(getLargest(numbers));
-
-    
+   
+   }
+    public static void main(String args[]){
+        Scanner scn = new Scanner(System.in);
+        int arr[] = {2,4,6,8,10};
+        subArrays(arr);
+    }
 }

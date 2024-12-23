@@ -8,7 +8,6 @@ public class linearsearch{
         }
         return -1;
     }
-    
     public static void main(String args[]){
         Scanner scn = new Scanner(System.in);
         int numbers[] = {2,4,6,8,10,12,14,16};
